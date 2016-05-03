@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>nl.codetribe</groupId>
+    <artifactId>jgpx</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>A java library for parsing GPX file.</description>
+    <url>https://github.com/ronsmits/jgpx</url>
+
+
+    <developers>
+        <developer>
+            <name>Martin Jansen</name>
+        </developer>
+        <developer>
+            <name>Ron Smits</name>
+            <email>ron.smits@gmail.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sonar.java.source>1.6</sonar.java.source>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <junit.version>4.12</junit.version>
+    </properties>
+
+    <scm>
+        <connection>scm:git:git@github.com:ronsmits/jgpx.git</connection>
+        <url>scm:git:git@github.com:ronsmits/jgpx.git</url>
+        <developerConnection>scm:git:git@github.com:ronsmits/jgpx.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

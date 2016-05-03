@@ -48,7 +48,6 @@ public class JDOMTest {
 	public void testTrackParsing() throws Exception {
 		Parser parser = new JDOM();
 		GPX gpx = parser.parse(new File("data/track.gpx"));
-		
 		assertEquals(1, gpx.getTracks().size());
 		
 		assertTrue(gpx.getTracks().get(0).cumulativeAscent() > 0);
