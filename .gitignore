@@ -1,4 +1,6 @@
 ### Maven template
+*.iml
+.idea/
 target/
 pom.xml.tag
 pom.xml.releaseBackup
